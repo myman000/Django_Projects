@@ -1,0 +1,36 @@
+{% extends "root/base.html" %}
+{% load static %}
+{% block title %}Register{% endblock title %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'root/css/register.css' %}">
+{% endblock css %}
+{% block content %}
+<div class="register-container">
+    <div class="register-page">
+        <div class="logo-box text-center">
+            <img src="{% static 'root/images/Logo.png' %}" alt="Logo">
+        </div>
+        <div class="login-entry text-center">
+            <form action="" method="post">
+                {% csrf_token %}
+                {% for fm in form %}
+                {{fm}} <br>
+                {% if fm.errors %}
+                {% for error in fm.errors %}
+                <div class="error-box text-warning">{{error}}</div>
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+                {% if form.non_field_errors %}
+                {% for error in form.non_field_errors %}
+                <div class="error-box text-warning">{{error}}</div>
+                {% endfor %}
+                {% else %}
+                {% endif %}
+                <br>
+                <button type="submit" class="btn btn-outline-info">Register</button> <br>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

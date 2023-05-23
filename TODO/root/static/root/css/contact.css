@@ -1,0 +1,412 @@
+@media screen and (min-width: 800px){
+    .contactBigContainer{
+        min-height: calc(100vh - 78px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .row-size{
+        width: 850px;
+    }
+    
+    
+    .contact-container{
+        height: 480px;
+        background-color: #343434;
+        border: 5px solid white;
+        border-radius: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        animation-name: animate;
+        animation-duration: 30s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes animate {
+        0%{border: 5px solid white;}
+        10%{border: 5px solid red;}
+        20%{border: 5px solid yellow;}
+        30%{border: 5px solid blue;}
+        40%{border: 5px solid aqua;}
+        50%{border: 5px solid rgb(229, 24, 58);}
+        60%{border: 5px solid rgb(51, 255, 0);}
+        70%{border: 5px solid rgb(209, 5, 255);}
+        80%{border: 5px solid rgb(255, 85, 0);}
+        90%{border: 5px solid rgb(162, 174, 0);}
+        100%{border: 5px solid rgb(33, 159, 213);}
+    }
+    
+    
+    .field{
+        width: 360px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 25px;
+        text-align: center;
+        background-color: #343434;
+        margin-bottom: 20px;
+    }
+    
+    #message-field{
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 20px;
+        background-color: #343434;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    
+    #contact-submit-button{
+        width: 200px;
+        height: 40px;
+        border-radius: 15px;
+    }
+    
+    .social-icons-row{
+        height: 60px;
+        background-color: #343434;
+        border: 3px solid white;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* .icons{
+        height: 55px;
+        width: 55px;
+        border: 1px solid white;
+        border-radius: 20%;
+        text-align: center;
+    } */
+    
+    
+    .fa-whatsapp{
+        color: rgb(5, 255, 22);
+    }
+    
+    .fa-youtube{
+        color: rgb(234, 35, 35);
+    }
+    
+    .fa-facebook{
+        color: rgb(39, 97, 244);
+    }
+    
+    .fa-twitter{
+        color: aqua;
+    }
+    
+    .fa-linkedin{
+        color: rgb(52, 52, 252);
+    }
+    
+    .fa-instagram{
+        color: rgb(248, 42, 76);
+    }
+    
+    .fa-home{
+        color: greenyellow;
+    }
+    
+    .camera-row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #camera{
+        width: 30px;
+        height: 30px;
+        background-color: #343434;
+        border: 1px solid white;
+        border-radius: 50%;
+        color: white;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    #camera:hover{
+        background-color: #1e1e1e;
+    }
+    
+    #camera-menu{
+        width: 770px;
+        height: 400px;
+        background-color: #1e1e1e;
+        opacity: 0.8;
+        border: 3px solid white;
+        border-radius: 20px;
+        position: absolute;
+        left: center;
+        top: 24.8%;
+        color: white;
+        display: none;
+        transition-property: display;
+        transition-duration: 2s;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .flash{
+        opacity: 1;
+        animation-name: flash;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes flash {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+
+    .mobile-buttons{
+        display: none;
+    }
+
+    .left-button-icons-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px){
+    .contactBigContainer{
+        min-height: 100%;
+        display: flex;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .row-size{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-container{
+        height: 700px;
+        max-width: 350px;
+        background-color: #343434;
+        border: 4px solid white;
+        border-radius: 30px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        animation-name: animate;
+        animation-duration: 30s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes animate {
+        0%{border: 5px solid white;}
+        10%{border: 5px solid red;}
+        20%{border: 5px solid yellow;}
+        30%{border: 5px solid blue;}
+        40%{border: 5px solid aqua;}
+        50%{border: 5px solid rgb(229, 24, 58);}
+        60%{border: 5px solid rgb(51, 255, 0);}
+        70%{border: 5px solid rgb(209, 5, 255);}
+        80%{border: 5px solid rgb(255, 85, 0);}
+        90%{border: 5px solid rgb(162, 174, 0);}
+        100%{border: 5px solid rgb(33, 159, 213);}
+    }
+
+    .field{
+        width: 100%;
+        max-width: 250px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 15px;
+        text-align: center;
+        background-color: #343434;
+        margin-bottom: 20px;
+    }
+    
+    #message-field{
+        width: 100%;
+        max-width: 250px;
+        height: 125px;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 15px;
+        background-color: #343434;
+        margin-bottom: 20px;
+    }
+    
+    #contact-submit-button{
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .mobile-buttons{
+        width: 350px;
+        height: 60px;
+        border: 2px solid white;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        margin-top: 20px;
+        position: relative;
+        top: 115px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation-name: animate-button;
+        animation-duration: 30s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+
+    .left-mobile-button{
+        margin-left: 5px;
+        z-index: 1;
+    }
+
+    .right-mobile-button{
+        margin-right: 5px;
+    }
+
+    .left-button-icons-menu{
+        min-height: 550px;
+        min-width: 150px;
+        max-width: calc(100vw - 190px);
+        max-height: 600px;
+        border-radius: 10px;
+        padding: 20px;
+        position: absolute;
+        left: 21.3%;
+        bottom: 13%;
+        background-color: #111010;
+        opacity: 0.8;
+        display: none;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-auto-rows: 1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: row;
+        transition: 2s;
+    }
+
+    @keyframes animate-button {
+        0%{border: 5px solid white;}
+        10%{border: 5px solid red;}
+        20%{border: 5px solid yellow;}
+        30%{border: 5px solid blue;}
+        40%{border: 5px solid aqua;}
+        50%{border: 5px solid rgb(229, 24, 58);}
+        60%{border: 5px solid rgb(51, 255, 0);}
+        70%{border: 5px solid rgb(209, 5, 255);}
+        80%{border: 5px solid rgb(255, 85, 0);}
+        90%{border: 5px solid rgb(162, 174, 0);}
+        100%{border: 5px solid rgb(33, 159, 213);}
+    }
+    
+    .social-icons-row{
+        display: none;
+    }
+    
+    
+    
+    .fa-whatsapp{
+        color: rgb(5, 255, 22);
+    }
+    
+    .fa-youtube{
+        color: rgb(234, 35, 35);
+    }
+    
+    .fa-facebook{
+        color: rgb(39, 97, 244);
+    }
+    
+    .fa-twitter{
+        color: aqua;
+    }
+    
+    .fa-linkedin{
+        color: rgb(52, 52, 252);
+    }
+    
+    .fa-instagram{
+        color: rgb(248, 42, 76);
+    }
+    
+    .fa-home{
+        color: greenyellow;
+    }
+    
+    .camera-row{
+        position: absolute;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #camera{
+        width: 30px;
+        height: 30px;
+        background-color: #343434;
+        border: 1px solid white;
+        border-radius: 50%;
+        color: white;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    #camera:hover{
+        background-color: #1e1e1e;
+    }
+    
+    #camera-menu{
+        width: 300px;
+        height: 400px;
+        background-color: #1e1e1e;
+        opacity: 0.8;
+        border: 3px solid white;
+        border-radius: 20px;
+        position: absolute;
+        left: 80px;
+        top: 24.8%;
+        color: white;
+        display: none;
+        transition-property: display;
+        transition-duration: 2s;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .flash{
+        opacity: 1;
+        animation-name: flash;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes flash {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    
+}

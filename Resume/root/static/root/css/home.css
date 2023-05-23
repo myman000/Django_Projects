@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Source+Code+Pro:wght@300&display=swap');
+
+
+h1{
+    color: yellow;
+}
+
+h2.text-start{
+    font-family: 'Moon Dance', cursive;
+}
+
+p{
+    font-size: small;
+}

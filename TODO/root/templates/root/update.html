@@ -1,0 +1,20 @@
+{% extends "root/base.html" %}
+{% load static %}
+{% block title %}Update{% endblock title %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'root/css/update.css' %}">
+{% endblock css %}
+{% block content %}
+<div class="row update-container">
+    <div class="update-form-container col-xs-6 offset-sm-3">
+        <form action="" method="post" class='text-center'>
+            {% csrf_token %}
+            {% for fm in form %}
+            {{fm}}{{fm.errors|striptags}}
+            {% endfor %}
+            <br>
+            <button class="btn btn-outline-primary update-form-submit-button text-center">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

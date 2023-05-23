@@ -1,0 +1,59 @@
+{% extends "root/base.html" %} {% load static %} {% block title %}Services{% endblock title %} {% block css %}
+<link rel="stylesheet" href="{% static 'root/css/services.css' %}" />
+{% endblock css %} {% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col mt-5 ms-2 me-2">
+      <h1 class="text-warning">Services</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col border border-2 ms-4 me-2"></div>
+  </div>
+
+  <div class="row mt-5 text-center">
+    <div class="col-sm-4">
+      <i class="fa-solid fa-code fa-2x icons"></i>
+      <h5 class="mt-2 mb-2 serviceName">Web Development</h5>
+      <p class="">
+        I am an experienced and highly skilled web developer with expertise in Django, JavaScript, CSS, HTML, and Bootstrap, and a track record of delivering high-quality, innovative web projects.
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa-solid fa-video fa-2x icons"></i>
+      <h5 class="mt-2 mb-2 serviceName">Video Editing</h5>
+      <p class="">I am an experienced Premiere Pro user with a strong foundation in video editing principles and a track record of creating professional-quality video content, and I also have some proficiency in After Effects with a basic understanding of motion graphics principles.</p>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa-solid fa-camera fa-2x icons"></i>
+      <h5 class="mt-2 mb-2 serviceName">Photoshop</h5>
+      <p class="">I am an experienced and proficient Photoshop user with a strong foundation in graphic design principles and a track record of producing high-quality visual content.</p>
+    </div>
+  </div>
+
+  <div class="row mt-5 text-center">
+    <div class="col-sm-4">
+      <i class="fa-solid fa-pen fa-2x icons"></i>
+      <h5 class="mt-2 mb-2 serviceName">Content Writer</h5>
+      <p>
+        I am a skilled and creative content writer with a passion for crafting engaging and compelling written materials for a variety of audiences and purposes.
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa-brands fa-python fa-2x icons"></i>
+      <h5 class="mt-2 mb-2 serviceName">Scripting</h5>
+      <p>
+        I am an experienced and proficient Python programmer with a strong foundation in computer science concepts and a track record of delivering high-quality, efficient code.
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa-solid fa-cubes fa-2x icons"></i>
+      <h5 class="mt-2 mb-2 serviceName">Logo Design</h5>
+      <p>
+        As a person, I am driven to constantly improve myself and pursue my
+        passions. I am highly motivated and dedicated to achieving my goals
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock content %}

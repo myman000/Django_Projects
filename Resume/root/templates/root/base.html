@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock title %}</title>
+
+    {% comment %} CSS {% endcomment %}
+    <link rel="stylesheet" href="{% static 'root/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'root/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'root/css/base.css' %}">
+    {% block css %}{% endblock css %}
+
+
+</head>
+<body class='bg-dark'>
+    
+    <div class="container-fluid text-white bg-dark">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="border-end border-warning h-100">
+                    {% comment %} Navbar Image {% endcomment %}
+                    <div class='text-center'>
+                        <img src="{% static 'root/images/2.jpg' %}" alt="Profile" width='150px' class='img-fluid rounded-circle mt-5'>
+                    </div>
+                    <h4 class="text-warning mt-3 text-center">Arsalan Ziaf</h4>
+                    <hr class='text-primary'>
+                    {% comment %} Navbar {% endcomment %}
+                    {% include 'root/navbar.html' %}
+                </div>
+                
+                
+                
+            </div>
+            <div class="col-sm-10">
+                {% block content %}{% endblock content %}
+            </div>
+        </div>
+    </div>
+
+
+
+    {% comment %} JavaScript {% endcomment %}
+    <script src="{% static 'root/js/popper.js' %}"></script>
+    <script src="{% static 'root/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'root/js/all.js' %}"></script>
+    {% block js %}{% endblock js %}
+</body>
+</html>

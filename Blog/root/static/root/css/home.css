@@ -1,0 +1,240 @@
+.slider{
+    width: 100% ;
+    height: 610px;
+    padding: 0px 15px;
+    background-image: url(../images/slider.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#slider-previous-button{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    order: 1;
+}
+
+#slider-previous-button a{
+    text-decoration: none;
+    color: white;
+}
+
+#slider-next-button{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    order: 3;
+}
+
+#slider-next-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.slider-blog{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 2;
+}
+
+.slider-blog-title{
+    font-size: 36pt;
+}
+
+.slider-blog-content{
+    font-size: 18pt;
+}
+
+.blog-container{
+    width: 100%;
+    height: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts {
+    height: 100%;
+    width: 80%;
+    background-color: rgb(131, 129, 129,0.5);
+    box-sizing: border-box;
+}
+
+.sidebar {
+    height: 100%;
+    width: 20%;
+    background-color: rgba(66, 65, 65, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts-header{
+    width: 100%;
+    height: 6%;
+    background-color: rgba(0, 195, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts-navigation{
+    width: 50%;
+    height: 70%;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.posts-navigation ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.posts-navigation ul li{
+    display: inline-block;
+    background-color: rgb(9, 59, 243);
+    border-radius: 16px;
+    padding: 10px 20px;
+    opacity: 80%;
+}
+
+.posts-navigation ul li:hover{
+    opacity: 100%;
+}
+
+.posts-navigation ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.posts-search{
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+#post-filter{
+    width: 25%;
+    height: 60%;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+#post-search{
+    width: 70%;
+    height: 60%;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.actual-posts{
+    width: 91%;
+    height: 21.3%;
+    background: linear-gradient(rgb(156, 5, 238,0.8),rgb(59, 28, 252,0.8));
+    margin: 10px auto 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.image-of-post{
+    width: 29%;
+    height: 94.3%;
+    margin: 0px 10px;
+}
+
+.image-of-post img{
+    width: 100%;
+    height: 100%;
+}
+
+.content-of-post{
+    width: 68%;
+    height: 94.3%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0px 5px;
+}
+
+.content-of-post h1{
+    font-size: 48px;
+    margin-bottom: 2px;
+}
+
+.category{
+    color: blue;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.publish-date{
+    color: rgb(43, 42, 42);
+    font-size: 18px;
+}
+
+.top-tech-newses-box{
+    width: 100%;
+    min-height: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-header{
+    width: 100%;
+    height: 6%;
+    background-color: rgba(0, 195, 255, 0.2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-sidebar-posts{
+    width: 95%;
+    height: 5.7%;
+    background-color: rgba(248, 0, 153, 0.2);
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.publish-date-sidebar-posts{
+    color: rgb(149, 144, 144);
+    margin-top: 3px;
+}

@@ -1,0 +1,166 @@
+{% extends "root/base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'root/css/home.css' %}" />
+{% endblock css %}
+{% block container %}
+<div class="slider">
+  <button id="slider-previous-button"><a href="#">Previous</a></button>
+  <button id="slider-next-button"><a href="#">Next</a></button>
+  <div class="slider-blog">
+    <h1 class="slider-blog-title">{{data.title}}</h1>
+    <p class="slider-blog-content">{{data.overview}}</p>
+  </div>
+</div>
+<div class="blog-container">
+  <div class="posts">
+    <div class="posts-header">
+      <nav class="posts-navigation">
+        <ul>
+          <li>
+            <a href="#">AI</a>
+          </li>
+          <li>
+            <a href="#">Top</a>
+          </li>
+          <li>
+            <a href="#">Psychology</a>
+          </li>
+          <li>
+            <a href="#">Time</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="posts-search">
+        <select name="filter" id="post-filter">
+          <option value="filter">filter</option>
+          <option value="Newest">Newest</option>
+          <option value="Oldes">Oldes</option>
+          <option value="Most Viewd">Most Viewd</option>
+        </select>
+        <input
+          type="text"
+          name="post-search"
+          id="post-search"
+          placeholder="search"
+        />
+      </div>
+    </div>
+    <div class="actual-posts">
+      <div class="image-of-post">
+        <img src="{% static 'root/images/slider.jpg' %}" alt="Image" />
+      </div>
+      <div class="content-of-post">
+        <h1>Post Title</h1>
+        <span class="category">category/sub-category</span>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          magnam incidunt laborum minus a nobis veniam vitae ut obcaecati
+          nostrum officiis harum accusantium quo nulla aperiam, reiciendis unde
+          quisquam exercitationem!laborum minus a nobis veniam vitae ut obcaecati
+          nostrum officiis harum accusantium quo nulla aperiam, reiciendis unde
+          quisquam exercitationem!
+        </p>
+        <span class='publish-date'>Publish Date: 02 March,2023 07:00:00 AM</span>
+      </div>
+    </div>
+    <div class="actual-posts">
+      <div class="image-of-post">
+        <img src="{% static 'root/images/slider.jpg' %}" alt="Image" />
+      </div>
+      <div class="content-of-post">
+        <h1>Post Title</h1>
+        <span class="category">category/sub-category</span>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          magnam incidunt laborum minus a nobis veniam vitae ut obcaecati
+          nostrum officiis harum accusantium quo nulla aperiam, reiciendis unde
+          quisquam exercitationem!laborum minus a nobis veniam vitae ut obcaecati
+          nostrum officiis harum accusantium quo nulla aperiam, reiciendis unde
+          quisquam exercitationem!
+        </p>
+        <span class='publish-date'>Publish Date: 02 March,2023 07:00:00 AM</span>
+      </div>
+    </div>
+    <div class="actual-posts">
+      <div class="image-of-post">
+        <img src="{% static 'root/images/slider.jpg' %}" alt="Image" />
+      </div>
+      <div class="content-of-post">
+        <h1>Post Title</h1>
+        <span class="category">category/sub-category</span>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          magnam incidunt laborum minus a nobis veniam vitae ut obcaecati
+          nostrum officiis harum accusantium quo nulla aperiam, reiciendis unde
+          quisquam exercitationem!laborum minus a nobis veniam vitae ut obcaecati
+          nostrum officiis harum accusantium quo nulla aperiam, reiciendis unde
+          quisquam exercitationem!
+        </p>
+        <span class='publish-date'>Publish Date: 02 March,2023 07:00:00 AM</span>
+      </div>
+    </div>
+    <div class="actual-posts">
+      <div class="image-of-post">
+        <img src="{% static 'root/images/slider.jpg' %}" alt="Image" />
+      </div>
+      <div class="content-of-post">
+        <h1>Post Title</h1>
+        <span class="category">category/sub-category</span>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          magnam incidunt laborum minus a nobis veniam vitae ut obcaecati
+          nostrum officiis harum accusantium quo nulla aperiam, reiciendis unde
+          quisquam exercitationem!laborum minus a nobis veniam vitae ut obcaecati
+          nostrum officiis harum accusantium quo nulla aperiam, reiciendis unde
+          quisquam exercitationem!
+        </p>
+        <span class='publish-date'>Publish Date: 02 March,2023 07:00:00 AM</span>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="top-tech-newses-box">
+      <div class="sidebar-header">
+        <h1>Top Tech Newses</h1>
+      </div>
+      <div class="tech-sidebar-posts">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, excepturi.
+        </p>
+        <span class='publish-date-sidebar-posts'>Date: 02 March,2023 07:00:00 AM</span>
+      </div>
+      <div class="tech-sidebar-posts">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, excepturi.
+        </p>
+        <span class='publish-date-sidebar-posts'>Date: 02 March,2023 07:00:00 AM</span>
+      </div>
+      <div class="tech-sidebar-posts">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, excepturi.
+        </p>
+        <span class='publish-date-sidebar-posts'>Date: 02 March,2023 07:00:00 AM</span>
+      </div>
+      <div class="tech-sidebar-posts">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, excepturi.
+        </p>
+        <span class='publish-date-sidebar-posts'>Date: 02 March,2023 07:00:00 AM</span>
+      </div>
+      <div class="tech-sidebar-posts">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, excepturi.
+        </p>
+        <span class='publish-date-sidebar-posts'>Date: 02 March,2023 07:00:00 AM</span>
+      </div>
+      <div class="tech-sidebar-posts">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, excepturi.
+        </p>
+        <span class='publish-date-sidebar-posts'>Date: 02 March,2023 07:00:00 AM</span>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock container %}

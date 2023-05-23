@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'root/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'root/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'root/css/base.css' %}">
+    {% block css %}{% endblock css %}
+</head>
+<body class='bg-dark'>
+    <div class="container-fluid bg-dark text-white">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="nav">
+                    <a href="{% url 'home' %}" class="nav-link text-white text-center"><i class="fa-solid fa-house-user"></i><br> Home</a>
+                    <a href="" class="nav-link text-white text-center"><i class="fa-solid fa-person"></i><br> About</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            {% block content %}{% endblock content %}
+        </div>
+    </div>
+
+    <script src="{% static 'root/js/bootstrap.js' %}"></script>
+    <script src="{% static 'root/js/all.js' %}"></script>
+    {% block js %}{% endblock js %}
+</body>
+</html>

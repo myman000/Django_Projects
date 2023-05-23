@@ -1,0 +1,50 @@
+{% extends "root/base.html" %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'root/css/home.css' %}" />
+{% endblock css %} {% block content %}
+<div class="text-center mt-5">
+  <img
+    src="{% static 'root/images/2.jpg' %}"
+    alt="Profile"
+    class="img-thumbnail"
+    width="250px"
+  />
+
+  <div class="mt-5 ms-5 me-5">
+    <h2 class="text-start text-warning fs-1">Hello,</h2>
+
+    <p style="text-indent: 100px" class="text-start ms-2">
+      I am <b class="text-warning">Arsalan</b>. As a person, I am driven to
+      constantly improve myself and pursue my passions. I am highly motivated
+      and dedicated to achieving my goals.
+    </p>
+    <p style="text-indent: 100px" class="text-start ms-2">
+      As a student, I am constantly seeking out new knowledge and ways to
+      improve myself. I am highly motivated and dedicated to my studies, and I
+      am not afraid to put in the hard work and effort needed to succeed. I am a
+      critical thinker and enjoy tackling complex problems and challenges. I am
+      also a strong communicator and enjoy collaborating with my peers to
+      achieve common goals. Overall, my passion for learning and personal growth
+      drives me to constantly strive for excellence in my studies and future
+      endeavors.
+    </p>
+    <p style="text-indent: 100px" class="text-start ms-2">
+      As an entrepreneur, I am driven to identify opportunities and create
+      innovative solutions to meet the needs of my customers. I am constantly
+      seeking out new ways to grow and improve my life, and I am not afraid to
+      take calculated risks in order to achieve success. I am highly organized
+      and disciplined, with a strong work ethic and a commitment to continuous
+      learning. I am also a strong leader and have the ability to inspire and
+      motivate others to work towards a common goal. Overall, my entrepreneurial
+      spirit and drive to succeed drives me to constantly strive for excellence
+      in all aspects of my life.
+    </p>
+  </div>
+
+  <div class="text-center mt-4 mb-4">
+    <a href="{% url 'Contact' %}" class="btn btn-outline-info me-3">Contact</a>
+    <a href="{% url 'Contact' %}" class="btn btn-outline-success ms-2"
+      >Hire Me</a
+    >
+  </div>
+</div>
+{% endblock content %}

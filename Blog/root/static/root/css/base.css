@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#3b1cfc, #aa07ff);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+    width: calc(100vw - 30px);
+    height: 10vh;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(69, 42, 246, 0.1);
+  }
+  
+
+  .logo {
+    height: 95%;
+    width: auto;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  
+  .logo img {
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+
+.navbar{
+    width: 58.5%;
+    height: 65%;
+    background-color: rgba(32, 7, 198,0.5);
+    border-radius: 40px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+
+.navbar li {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    background-color: #06d5ff;
+    border-radius: 20%;
+}
+
+.disclaimer-button {
+    height: 60%;
+    width: 9.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disclaimer-button button {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 90%;
+    border: 1px solid #3b1cfc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    min-width: calc(100vw - 30px);
+    max-width: calc(1366px - 30px);
+    min-height: 100vh;
+    height: auto;
+    background-color: transparent;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

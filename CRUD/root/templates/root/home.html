@@ -1,0 +1,53 @@
+{% extends "root/base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'root/css/home.css' %}">
+{% endblock css %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-4">
+        <div class="row">
+            <h2 class="text-warning alert alert-primary text-center">New Student</h2>
+        </div>
+        <div class="row">
+            <form action="" method="post">
+                {% csrf_token %}
+                {% for fm in form %}
+                <div class="form-group mt-2">
+                    {{fm.label_tag}}{{fm}}{{fm.errors|striptags}}
+                </div>
+                {% endfor %}
+                <button type="submit" class="btn btn-success mt-2">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-sm-6 offset-sm-2">
+        <div class="row">
+            <h2 class="text-warning alert alert-primary text-center">Students Data</h2>
+        </div>
+        <div class="row">
+            <table class="table table-responsive table-striped table-bordered table-dark text-center">
+                <thead class='text-white'>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for d in data %}
+                    <tr>
+                        <td>{{d.student_id}}</td>
+                        <td>{{d.first_name}} {{d.last_name}}</td>
+                        <td>{{d.email}}</td>
+                        <td><a href="{% url 'delete' d.student_id %}" class="btn btn-sm btn-danger">Delete</a><a href="{% url 'update' d.student_id %}" class="btn btn-sm btn-info ms-2">Update</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock content %}
